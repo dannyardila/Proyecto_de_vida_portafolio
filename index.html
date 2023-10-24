@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">DX10</a>
             </div>
             <nav id="nav">
                 <ul>
@@ -35,13 +35,13 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/danny.png" alt="">
+                <img src="img/principal.jpg" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Danny Ardila</h1>
+            <h2>Historiador - Entrenador Deportivo</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/danny.ferney.5/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-skype"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#"><i class="fa-solid fa-rss"></i></a>
@@ -105,12 +105,12 @@
                             <span>VIAJAR</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>Social Media</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Futbol</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-book"></i>
@@ -121,17 +121,26 @@
                             <span>AUTOS</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
+                            <i class="fa-regular fa-earth-americas"></i>
+                            <span>Geografia</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <button>
+
+            <button id="downloadButton">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
+            <a id="downloadLink" href="/ruta/al/archivo/cv.pdf" download style="display:none;"></a>
+        
+            <script>
+                document.getElementById("downloadButton").addEventListener("click", function () {
+                    // Simula un clic en el enlace oculto para iniciar la descarga
+                    document.getElementById("downloadLink").click();
+                });
+            </script>
         </div>
     </section>
 
@@ -240,18 +249,18 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Primaria</h4>
+                        <h4>Primaria Y Secundaria</h4>
                         <span class="casa">Colegio  Nacional San Jose De Guanenta </span>
-                        <span class="fecha">2024 - 2028</span>
+                        <span class="fecha">2012 - 2013</span>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
+                        <h4>Historia</h4>
+                        <span class="casa">Universidad Industrial De Santander</span>
+                        <span class="fecha">2024 - 2028</span>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
@@ -377,15 +386,15 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
+                                Colombia , Santander,  San Gil
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
+                                Llamanos: 3165736850 - 3108886163 
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
+                                Email: dannyardila059@gmail.com
                             </li>
                         </ul>
                     </div>
