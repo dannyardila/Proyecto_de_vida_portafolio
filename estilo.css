@@ -28,24 +28,54 @@ html{
     padding: 15px 20px;
 }
 
-/*logo*/
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #c50d0d;
+/* Logo */
+.contenedor-header header .logo a {
+    font-family: 'Oswald', sans-serif; /* Fuente llamativa */
+    font-size: 48px; /* Tamaño de fuente */
+    color: #eb0909;
     text-decoration: none;
+    
+    /* Efecto de sombra de texto */
+    text-shadow: 12px 2px 4px rgba(54, 119, 156, 0.5);
+    
+    /* Animación de rotación continua */
+    animation: rotate 4s linear infinite; /* Rotación infinita */
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Sin rotación inicial */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotación completa de 360 grados */
+    }
+}
+
+
+
+
+
 .contenedor-header header ul{
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
+
+/* letras parte superior*/
+
+.contenedor-header header nav ul li a {
+    font-family: 'Monoton', cursive; /* Fuente llamativa */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #e20808;
     text-decoration: none;
+    padding: 3px;
+    transition: color 0.5s, text-shadow 0.5s; /* Transiciones para color y sombra de texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Efecto de sombra al pasar el cursor sobre los enlaces */
+.contenedor-header header nav ul li a:hover {
+    color: #ff5733; /* Cambia el color al pasar el cursor */
+    text-shadow: 4px 2px 4px rgba(9, 209, 25, 0.5); /* Agrega sombra al pasar el cursor */
 }
 .contenedor-header header nav ul li a:hover{
     color: #da0909;
@@ -60,7 +90,7 @@ html{
 }
 /* SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    background: linear-gradient(to top, rgba(12, 12, 14, 0.8), rgb(224, 9, 9)),
     url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
@@ -68,21 +98,38 @@ html{
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
-    padding: 20px;
-    background-color: #0b0b0c;
-    max-width: 350px;
+
+.inicio .contenido-banner {
+    padding: 60px;
+    background-color: #060608;
+    max-width: 450px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    border: 4px solid #db240c; /* Borde colorido */
+    box-shadow: 0 0 10px rgba(214, 37, 5, 0.5); /* Sombra */
+
+    /* Animación de movimiento */
+    animation: bounce 2s ease infinite; /* Nombre de la animación, duración, suavidad y repetición */
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateY(-10px); /* Posición a la mitad de la animación */
+    }
+}
+
+
 .inicio .contenido-banner img{
     margin-top: 50px;
-    border: 8px solid #e01616;
+    border: 5px solid #e01616;
     display: block;
     width: 80%;
     margin: auto;
-    border-radius: 90%;
+    border-radius: 100%;
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;

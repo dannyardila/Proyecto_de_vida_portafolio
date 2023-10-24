@@ -2,7 +2,7 @@
 
 1. Creacion de Interfaz con canvas 
 
-![Interfaz]()
+![Interfaz](img/interfaz.png)
 
 
 
@@ -11,7 +11,9 @@
 ![Logo]()
 
 3. Creacion de una base de datos
+![Base de Datos ](img/base.png)
  
 4. Primero pasos de la interfaz en html
+![html ](img/html.png)
 
 5. Creacion del formulario
