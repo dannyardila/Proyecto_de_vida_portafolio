@@ -11,16 +11,19 @@ html{
 }
 /* MENU */
 /*parte de arriba*/
+
 .contenedor-header{
-    background: #030303;
+    background: linear-gradient(to right, #0c0c0c, #db0b0b); /* Crea un gradiente de izquierda a derecha de negro a gris oscuro */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5); /* Crea una sombra debajo del contenedor con un color negro semi-transparente */
 }
+
 .contenedor-header header{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -63,13 +66,14 @@ html{
 /* letras parte superior*/
 
 .contenedor-header header nav ul li a {
-    font-family: 'Monoton', cursive; /* Fuente llamativa */
+    font-family: 'Roboto', sans-serif; /* Fuente llamativa */
     font-size: 14px; /* Tamaño de fuente más pequeño */
-    color: #e20808;
+    color: #e9dede;
     text-decoration: none;
     padding: 3px;
     transition: color 0.5s, text-shadow 0.5s; /* Transiciones para color y sombra de texto */
     letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: bold; /* Fuente en negrita */
 }
 
 /* Efecto de sombra al pasar el cursor sobre los enlaces */
@@ -81,8 +85,8 @@ html{
     color: #da0909;
 }
 .nav-responsive{
-    background-color: #180a03;
-    color:#f00c0c;
+    background-color: #080808;
+    color:#ce0808;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -90,8 +94,8 @@ html{
 }
 /* SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(12, 12, 14, 0.8), rgb(224, 9, 9)),
-    url(img/fondo.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(224, 9, 9)),
+    url(img/fondo1.png);/*fondo*/
     background-size: cover;
     height: 100vh;
     color: #f10808;
@@ -100,14 +104,14 @@ html{
 }
 
 .inicio .contenido-banner {
-    padding: 60px;
-    background-color: #060608;
-    max-width: 450px;
+    padding: 0px;
+    background-color: #000000;
+    max-width: 550px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
     border: 4px solid #db240c; /* Borde colorido */
-    box-shadow: 0 0 10px rgba(214, 37, 5, 0.5); /* Sombra */
+    box-shadow: 0 0 10px rgba(251, 255, 251, 0.5); /* Sombra */
 
     /* Animación de movimiento */
     animation: bounce 2s ease infinite; /* Nombre de la animación, duración, suavidad y repetición */
@@ -120,6 +124,8 @@ html{
     50% {
         transform: translateY(-10px); /* Posición a la mitad de la animación */
     }
+
+    
 }
 
 
@@ -157,8 +163,8 @@ html{
     background-color: #e71515;
 }
 .sobremi{
-    background-color: #181414;
-    color: #fff;
+    background-color: #101011;
+    color: #ece8e8;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -201,11 +207,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #cf0909;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #df0c16;
+    background-color: #c40811;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -251,7 +257,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #ec0404;
     z-index: -1;
     transition: 1s;
 }
@@ -294,7 +300,7 @@ html{
 }
 .skills .skill .barra-skill{
     height: 8px;
-    width: 80%;
+    width: 90%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
@@ -325,7 +331,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .htmlcss{
@@ -352,7 +358,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 91%;}
 }
 
 .skills .skill .drupal{
@@ -361,7 +367,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .comunicacion{
@@ -370,7 +376,7 @@ html{
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .trabajo{
@@ -379,7 +385,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .creatividad{
@@ -388,7 +394,7 @@ html{
 }
 @keyframes creatividad {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .dedicacion{
@@ -397,7 +403,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .proyect{
@@ -469,7 +475,7 @@ html{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #dd0707;
     margin-right: 20px;
 }
 .curriculum .fila .der{
@@ -637,10 +643,10 @@ html{
 }
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 0%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-swidth: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -651,7 +657,7 @@ html{
     margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-    color: #1CB698;
+    color: #f32f0d;
     display: inline-block;
     margin-right: 20px;
 }
